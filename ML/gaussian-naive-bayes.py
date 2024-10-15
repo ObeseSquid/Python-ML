@@ -39,7 +39,6 @@ y_pred = model.predict(X_test)
 
 # Evaluate the model
 accuracy = accuracy_score(y_test, y_pred)
-print("Accuracy:", accuracy)
 
 # Example prediction for specific conditions
 new_data = ['Sunny', 'Cool', 'High', 'Strong']  # Given conditions
@@ -49,3 +48,4 @@ prediction = model.predict([encoded_data])
 predicted_label = label_encoders['PlayTennis'].inverse_transform(prediction)
 
 print(f"Prediction for the new data {new_data}: {predicted_label[0]}")
+print("Accuracy:", accuracy)
