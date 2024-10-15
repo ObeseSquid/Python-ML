@@ -24,6 +24,6 @@ model = LinearRegression()
 model.fit(X_train, y_train)
 
 # Predicting the price for a room size of 6
-room_size_input = np.array([[5]])
+room_size_input = np.array([[7]])
 predicted_price = model.predict(room_size_input)[0]
-print(f'Expected price for room size 5: ${predicted_price:.2f}')
+print(f'Expected price for room size 7: ${predicted_price:.2f}')
