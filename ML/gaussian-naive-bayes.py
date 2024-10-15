@@ -41,7 +41,7 @@ y_pred = model.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 
 # Example prediction for specific conditions
-new_data = ['Sunny', 'Cool', 'High', 'Strong']  # Given conditions
+new_data = ['Sunny', 'Mild', 'Normal', 'Weak']  # Given conditions
 # Encode the new data using the same encoders
 encoded_data = [label_encoders[column].transform([value])[0] for column, value in zip(df.columns[:-1], new_data)]
 prediction = model.predict([encoded_data])
